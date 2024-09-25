@@ -7,11 +7,11 @@ using namespace std;
 int main() {
   // declare variables
   int base = 11;
-  int height = 13;
+  int height = 13; 
   double area = 0.0;
-
+  
   // calculate and display area
-  area = base * height / 2;
+  area = base * height / 2.0;
   cout << "Area: " << area << endl;
 
   return 0;
