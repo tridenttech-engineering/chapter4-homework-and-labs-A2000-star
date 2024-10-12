@@ -4,20 +4,22 @@
 #include <iostream>
 using namespace std;
 
-int main() 
-{
- //declared and initialized variables
-  double salePrice = 0.0;
-  double taxRate = 0.0;
-  double saleTax = 0.0;
-  double cost = 0.0;
+int main() {
+  double beginningBalance = 0.0;
+  double totalDeposits = 0.0;
+  double totalWithdrawals = 0.0;
+  double ending = 0.0;
+    
+  cout << "Beginning balance: ";
+  cin >> beginningBalance;
+  cout << "Total deposits: ";
+  cin >> totalDeposits;
+  cout << "Total withdrawals: ";
+  cin >> totalWithdrawals;
 
+  ending = beginningBalance + totalDeposits - totalWithdrawals; cout << "Ending balance: " << ending << endl;
   
-  //enter input item
-  cout << "Enter the sale price: ";
-  cin >> salePrice;
-  cout << "Enter the sales tax rate: ";
-  cin >> taxRate;
+return 0;
+  
+}// end of main function
 
-  return 0;
-} // end of main function
